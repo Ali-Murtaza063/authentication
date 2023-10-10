@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    height: 100vh;
+  width: 100%;
+  background-image: url("assets/bg_signin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input:focus{
+outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input::placeholder{
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sigincontainer{
+    border-radius: 10px;
+min-height: 400px;
+width: 400px;
+background-color: rgba(12, 17, 16, 0.784);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+box-shadow: 2px;
+transition: 0.5s all;
 }
 
-.App-link {
-  color: #61dafb;
+.sigincontainer:hover{
+    border-radius: 0px;
+    background-color: rgba(12, 17, 16, 0.912);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+h2{
+    text-align: center;
+    color: white;
+    margin-top: 2px;
 }
+
+.span-tag{
+    color: white;
+    font-size: 12px;
+}
+
+.sdf{
+    font-size: 12px;
+}
+
+.check-css{
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    margin-left: 15px;
+}
+
+
+
+
+.userinput{
+    margin-top: 40px;
+    line-height: 50px;
+    
+
+}
+.userinput input{
+width: 90%;
+height: 50px;
+margin-left: 10px;
+border: none;
+background-color: transparent;
+border-bottom: 2px solid white;
+margin-left: 15px;
+
+
+
+
+
+
+}
+
+.checkbox{
+    display: flex;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+}
+
+/* .checkbox input{
+    margin-left: 10px;
+    width: 16px;
+    height: 16px;
+    top: 28px;
+} */
+/* .rem{
+    font-size: 20px;
+    margin-left: 6px;
+    color: white;
+    font-size: 12px;
+    top: 25px;  
+
+} */
+.forget{
+    display: inline;
+    margin-left: 25px;
+}
+.login {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+
+}
+.donot p{
+    font-size: 10px;
+    top:50px;
+    left: 144px;
+    margin-top:20px ;
+   text-align: center;
+   padding-bottom: 10px;
+    
+}
+
+/* .mainbody{
+    background-image:url(assets/bg_signin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+button{
+    color: black;
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    
+}
+.main-check{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    margin-top: 25px;
+  
+
+
+}
+.s-check{
+    display: flex;
+    align-items: center;
+    width:50% ;
+}
+.span-tag{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 28px;
+    padding-left: 8px;
+    
+}
+@media (min-width: 0px) and (max-width: 440px) {
+    .sigincontainer{
+        position: absolute;
+        align-items: center;
+
+    }
+
+}
+    
+
